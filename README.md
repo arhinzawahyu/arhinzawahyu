@@ -21,6 +21,6 @@ Lifelong Learner, currently studied as uin rms.
 <a href="https://www.instagram.com/arhinza.whyuu/">
   <img align="left" alt="Goo's Instagram" width="20px" src="https://simpleicons.now.sh/instagram/495f7e" />
 </a>
-<a href="https://www.linkedin.com/in/arhinza-wahyu-styawan">
+<a href="https://www.linkedin.com/in/arhinza-wahyu-styawan-1a4229361/">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
 </a>
