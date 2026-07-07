@@ -37,7 +37,7 @@
 ### 🤝 Let's Connect
 
 <div align="center">
-  <a href="https://www.instagram.com/arhinza.whyuu/">
+  <a href="https://www.instagram.com/arhnza.stywn/">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
   </a>
   <a href="https://www.linkedin.com/in/arhinza-wahyu-styawan-1a4229361/">
