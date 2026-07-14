@@ -1,3 +1,9 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dark_mode.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="light_mode.svg" />
+  <img alt="arhinzawahyu's GitHub profile" src="dark_mode.svg" />
+</picture>
+
 <div align="center">
   <h1>Hi there <img src="https://raw.githubusercontent.com/nixin72/nixin72/master/wave.gif" width="40px" alt="wave"/>, I'm Zaa!</h1>
   <p><strong>Lifelong Learner</strong> · Currently studying at UIN RMS</p>
