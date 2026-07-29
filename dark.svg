@@ -1,19 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610" style="background:#0A101F">
-<defs><style>
-@keyframes pl{0%{opacity:1}50%{opacity:.2}100%{opacity:1}}
+<defs>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap");
+@keyframes pl{0%{opacity:1}50%{opacity:.15}100%{opacity:1}}
+@keyframes gl{0%{stop-color:#A78BFA}50%{stop-color:#7C3AED}100%{stop-color:#A78BFA}}
 .lv{animation:pl 1.5s ease-in-out infinite}
 .d{stroke-width:0.85;stroke-linecap:butt;stroke:#E2E8F0;fill:none;shape-rendering:crispEdges}
 .tr{stroke-width:1.5;stroke-linecap:round}
-</style></defs>
+.h{font-family:"Plus Jakarta Sans",sans-serif;font-weight:700}
+.t{font-family:"Inter",sans-serif}
+.tb{font-family:"Inter",sans-serif;font-weight:600}
+</style>
+<linearGradient id="pg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A78BFA"/><stop offset="100%" stop-color="#7C3AED"/></linearGradient>
+<linearGradient id="pg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#A78BFA"/><stop offset="100%" stop-color="#7C3AED"/></linearGradient>
+<linearGradient id="pg3" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#A78BFA"/><stop offset="100%" stop-color="#7C3AED"/></linearGradient>
+</defs>
 <rect x="0" y="0" width="1180" height="610" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1"/>
 <rect x="0" y="0" width="1180" height="40" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1"/>
 <rect x="0" y="20" width="1180" height="20" fill="#0F172A"/>
 <circle cx="14" cy="20" r="5" fill="#EF4444"/>
 <circle cx="36" cy="20" r="5" fill="#EAB308"/>
 <circle cx="58" cy="20" r="5" fill="#22C55E"/>
-<text x="590" y="25" fill="#94A3B8" font-family="monospace" font-size="14" text-anchor="middle">profile.sh --live</text>
+<text x="590" y="25" fill="url(#pg3)" font-family="Inter,sans-serif" font-size="14" font-weight="700" text-anchor="middle">arhinzawahyu@github:~$ ./profile --live</text>
 <line x1="470" y1="40" x2="470" y2="610" stroke="#334155" stroke-width="1"/>
-<text x="36" y="62" fill="#A78BFA" font-family="monospace" font-size="13" font-weight="bold">VISUAL.MAP</text>
+<text x="36" y="62" fill="url(#pg3)" class="h" font-size="13">VISUAL.MAP</text>
 <rect x="30" y="70" width="412" height="466" rx="4" fill="none" stroke="#A78BFA" stroke-width="1" opacity=".35"/>
 <path class="d" d="M248 98h1 M256 100h1"><animate attributeName="opacity" from="0" to="1" begin="1.28s" dur="0.51s" fill="freeze"/></path>
 <path class="d" d="M222 102h1"><animate attributeName="opacity" from="0" to="1" begin="0.55s" dur="0.61s" fill="freeze"/></path>
@@ -2951,57 +2961,57 @@
 <animate attributeName="cy" values="200;200;152;152;295;295;220;220;200" keyTimes="0;.211;.303;.444;.535;.676;.768;.909;1" dur="14.2s" repeatCount="indefinite"/>
 <animate attributeName="opacity" values="0;0;1;1;0;0;1;1;0" keyTimes="0;.211;.303;.444;.535;.676;.768;.909;1" dur="14.2s" repeatCount="indefinite"/>
 </circle>
-<text x="490" y="62" fill="#10B981" font-family="monospace" font-size="13" font-weight="bold">SYSTEM.INFO</text>
+<text x="490" y="62" fill="#10B981" class="h" font-size="13">SYSTEM.INFO</text>
 <rect x="630" y="48" width="34" height="18" rx="3" fill="#EF4444" opacity=".2"/>
-<text x="647" y="60" fill="#EF4444" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle" class="lv">LIVE</text>
-<rect x="674" y="48" width="130" height="18" rx="9" fill="#A78BFA"/>
-<text x="739" y="60" fill="#fff" font-family="monospace" font-size="13" font-weight="bold" text-anchor="middle">@arhinzawahyu</text>
-<text x="490" y="100" fill="#E2E8F0" font-family="monospace" font-size="14" font-weight="bold" textLength="140" lengthAdjust="spacingAndGlyphs">Subject</text>
-<text x="635" y="100" fill="#94A3B8" font-family="monospace" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">.................</text>
-<text x="840" y="100" fill="#94A3B8" font-family="monospace" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">Arhinza Wahyu Styawan</text>
-<text x="490" y="125" fill="#E2E8F0" font-family="monospace" font-size="14" font-weight="bold" textLength="140" lengthAdjust="spacingAndGlyphs">Role</text>
-<text x="635" y="125" fill="#94A3B8" font-family="monospace" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">................................</text>
-<text x="840" y="125" fill="#94A3B8" font-family="monospace" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">Web Developer</text>
-<text x="490" y="150" fill="#E2E8F0" font-family="monospace" font-size="14" font-weight="normal" textLength="140" lengthAdjust="spacingAndGlyphs">Origin</text>
-<text x="635" y="150" fill="#94A3B8" font-family="monospace" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">....................</text>
-<text x="840" y="150" fill="#94A3B8" font-family="monospace" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">Surakarta, Indonesia</text>
-<text x="490" y="175" fill="#E2E8F0" font-family="monospace" font-size="14" font-weight="normal" textLength="140" lengthAdjust="spacingAndGlyphs">Education</text>
-<text x="635" y="175" fill="#94A3B8" font-family="monospace" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">...</text>
-<text x="840" y="175" fill="#94A3B8" font-family="monospace" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">studying for bachelor's degree</text>
-<text x="490" y="200" fill="#E2E8F0" font-family="monospace" font-size="14" font-weight="bold" textLength="140" lengthAdjust="spacingAndGlyphs">Status</text>
-<text x="635" y="200" fill="#94A3B8" font-family="monospace" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">.......</text>
-<text x="840" y="200" fill="#94A3B8" font-family="monospace" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">Building + Learning + Shipping</text>
-<text x="490" y="225" fill="#E2E8F0" font-family="monospace" font-size="14" font-weight="normal" textLength="140" lengthAdjust="spacingAndGlyphs">ToolChain</text>
-<text x="635" y="225" fill="#94A3B8" font-family="monospace" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">.................</text>
-<text x="840" y="225" fill="#94A3B8" font-family="monospace" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">VS Code, Git, Tools</text>
-<text x="490" y="275" fill="#10B981" font-family="monospace" font-size="14" font-weight="normal" textLength="140" lengthAdjust="spacingAndGlyphs">Core.Lang</text>
-<text x="635" y="275" fill="#94A3B8" font-family="monospace" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">.............................</text>
-<text x="840" y="275" fill="#94A3B8" font-family="monospace" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">JavaScript</text>
-<text x="490" y="300" fill="#10B981" font-family="monospace" font-size="14" font-weight="normal" textLength="140" lengthAdjust="spacingAndGlyphs">Core.Frontend</text>
-<text x="635" y="300" fill="#94A3B8" font-family="monospace" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">...................................</text>
-<text x="840" y="300" fill="#94A3B8" font-family="monospace" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">-</text>
-<text x="490" y="325" fill="#10B981" font-family="monospace" font-size="14" font-weight="normal" textLength="140" lengthAdjust="spacingAndGlyphs">Core.Backend</text>
-<text x="635" y="325" fill="#94A3B8" font-family="monospace" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">....................................</text>
-<text x="840" y="325" fill="#94A3B8" font-family="monospace" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">-</text>
-<text x="490" y="350" fill="#10B981" font-family="monospace" font-size="14" font-weight="normal" textLength="140" lengthAdjust="spacingAndGlyphs">Core.DB</text>
-<text x="635" y="350" fill="#94A3B8" font-family="monospace" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">......................................</text>
-<text x="840" y="350" fill="#94A3B8" font-family="monospace" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">MySQL</text>
-<text x="490" y="375" fill="#10B981" font-family="monospace" font-size="14" font-weight="normal" textLength="140" lengthAdjust="spacingAndGlyphs">Core.Infra</text>
-<text x="635" y="375" fill="#94A3B8" font-family="monospace" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">.......................................</text>
-<text x="840" y="375" fill="#94A3B8" font-family="monospace" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">-</text>
-<text x="490" y="425" fill="#10B981" font-family="monospace" font-size="14" font-weight="bold" textLength="140" lengthAdjust="spacingAndGlyphs">Grid.Mail</text>
-<text x="635" y="425" fill="#94A3B8" font-family="monospace" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">.........</text>
-<text x="840" y="425" fill="#10B981" font-family="monospace" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">arhinzastyawann@gmail.com</text>
-<text x="490" y="450" fill="#10B981" font-family="monospace" font-size="14" font-weight="bold" textLength="140" lengthAdjust="spacingAndGlyphs">Grid.Portfolio</text>
-<text x="635" y="450" fill="#94A3B8" font-family="monospace" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">..................</text>
-<text x="840" y="450" fill="#10B981" font-family="monospace" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">zaadev.web.id</text>
-<text x="490" y="475" fill="#10B981" font-family="monospace" font-size="14" font-weight="bold" textLength="140" lengthAdjust="spacingAndGlyphs">Grid.LinkedIn</text>
-<text x="635" y="475" fill="#94A3B8" font-family="monospace" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">.........</text>
-<text x="840" y="475" fill="#10B981" font-family="monospace" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">linkedin/arhinzawahyu</text>
-<text x="490" y="500" fill="#10B981" font-family="monospace" font-size="14" font-weight="bold" textLength="140" lengthAdjust="spacingAndGlyphs">Grid.GitHub</text>
-<text x="635" y="500" fill="#94A3B8" font-family="monospace" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">......................</text>
-<text x="840" y="500" fill="#10B981" font-family="monospace" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">@arhinzawahyu</text>
-<text x="490" y="525" fill="#10B981" font-family="monospace" font-size="14" font-weight="normal" textLength="140" lengthAdjust="spacingAndGlyphs">Grid.Facebook</text>
-<text x="635" y="525" fill="#94A3B8" font-family="monospace" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">...................................</text>
-<text x="840" y="525" fill="#10B981" font-family="monospace" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">-</text>
+<text x="647" y="60" fill="#EF4444" class="tb" font-size="11" text-anchor="middle" class="lv">LIVE</text>
+<rect x="674" y="48" width="130" height="18" rx="9" fill="url(#pg2)"/>
+<text x="739" y="60" fill="#fff" class="t" font-size="13" font-weight="600" text-anchor="middle">@arhinzawahyu</text>
+<text x="490" y="100" fill="#E2E8F0" class="t" font-size="14" font-weight="bold" textLength="140" lengthAdjust="spacingAndGlyphs">Subject</text>
+<text x="635" y="100" fill="#94A3B8" class="t" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">.................</text>
+<text x="840" y="100" fill="#94A3B8" class="t" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">Arhinza Wahyu Styawan</text>
+<text x="490" y="125" fill="#E2E8F0" class="t" font-size="14" font-weight="bold" textLength="140" lengthAdjust="spacingAndGlyphs">Role</text>
+<text x="635" y="125" fill="#94A3B8" class="t" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">................................</text>
+<text x="840" y="125" fill="#94A3B8" class="t" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">Web Developer</text>
+<text x="490" y="150" fill="#E2E8F0" class="t" font-size="14" font-weight="normal" textLength="140" lengthAdjust="spacingAndGlyphs">Origin</text>
+<text x="635" y="150" fill="#94A3B8" class="t" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">....................</text>
+<text x="840" y="150" fill="#94A3B8" class="t" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">Surakarta, Indonesia</text>
+<text x="490" y="175" fill="#E2E8F0" class="t" font-size="14" font-weight="normal" textLength="140" lengthAdjust="spacingAndGlyphs">Education</text>
+<text x="635" y="175" fill="#94A3B8" class="t" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">...</text>
+<text x="840" y="175" fill="#94A3B8" class="t" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">studying for bachelor's degree</text>
+<text x="490" y="200" fill="#E2E8F0" class="t" font-size="14" font-weight="bold" textLength="140" lengthAdjust="spacingAndGlyphs">Status</text>
+<text x="635" y="200" fill="#94A3B8" class="t" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">.......</text>
+<text x="840" y="200" fill="#94A3B8" class="t" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">Building + Learning + Shipping</text>
+<text x="490" y="225" fill="#E2E8F0" class="t" font-size="14" font-weight="normal" textLength="140" lengthAdjust="spacingAndGlyphs">ToolChain</text>
+<text x="635" y="225" fill="#94A3B8" class="t" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">.................</text>
+<text x="840" y="225" fill="#94A3B8" class="t" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">VS Code, Git, Tools</text>
+<text x="490" y="275" fill="#10B981" class="t" font-size="14" font-weight="normal" textLength="140" lengthAdjust="spacingAndGlyphs">Core.Lang</text>
+<text x="635" y="275" fill="#94A3B8" class="t" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">.............................</text>
+<text x="840" y="275" fill="#94A3B8" class="t" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">JavaScript</text>
+<text x="490" y="300" fill="#10B981" class="t" font-size="14" font-weight="normal" textLength="140" lengthAdjust="spacingAndGlyphs">Core.Frontend</text>
+<text x="635" y="300" fill="#94A3B8" class="t" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">...................................</text>
+<text x="840" y="300" fill="#94A3B8" class="t" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">-</text>
+<text x="490" y="325" fill="#10B981" class="t" font-size="14" font-weight="normal" textLength="140" lengthAdjust="spacingAndGlyphs">Core.Backend</text>
+<text x="635" y="325" fill="#94A3B8" class="t" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">....................................</text>
+<text x="840" y="325" fill="#94A3B8" class="t" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">-</text>
+<text x="490" y="350" fill="#10B981" class="t" font-size="14" font-weight="normal" textLength="140" lengthAdjust="spacingAndGlyphs">Core.DB</text>
+<text x="635" y="350" fill="#94A3B8" class="t" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">......................................</text>
+<text x="840" y="350" fill="#94A3B8" class="t" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">MySQL</text>
+<text x="490" y="375" fill="#10B981" class="t" font-size="14" font-weight="normal" textLength="140" lengthAdjust="spacingAndGlyphs">Core.Infra</text>
+<text x="635" y="375" fill="#94A3B8" class="t" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">.......................................</text>
+<text x="840" y="375" fill="#94A3B8" class="t" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">-</text>
+<text x="490" y="425" fill="#10B981" class="t" font-size="14" font-weight="bold" textLength="140" lengthAdjust="spacingAndGlyphs">Grid.Mail</text>
+<text x="635" y="425" fill="#94A3B8" class="t" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">.........</text>
+<text x="840" y="425" fill="#10B981" class="t" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">arhinzastyawann@gmail.com</text>
+<text x="490" y="450" fill="#10B981" class="t" font-size="14" font-weight="bold" textLength="140" lengthAdjust="spacingAndGlyphs">Grid.Portfolio</text>
+<text x="635" y="450" fill="#94A3B8" class="t" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">..................</text>
+<text x="840" y="450" fill="#10B981" class="t" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">zaadev.web.id</text>
+<text x="490" y="475" fill="#10B981" class="t" font-size="14" font-weight="bold" textLength="140" lengthAdjust="spacingAndGlyphs">Grid.LinkedIn</text>
+<text x="635" y="475" fill="#94A3B8" class="t" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">.........</text>
+<text x="840" y="475" fill="#10B981" class="t" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">linkedin/arhinzawahyu</text>
+<text x="490" y="500" fill="#10B981" class="t" font-size="14" font-weight="bold" textLength="140" lengthAdjust="spacingAndGlyphs">Grid.GitHub</text>
+<text x="635" y="500" fill="#94A3B8" class="t" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">......................</text>
+<text x="840" y="500" fill="#10B981" class="t" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">@arhinzawahyu</text>
+<text x="490" y="525" fill="#10B981" class="t" font-size="14" font-weight="normal" textLength="140" lengthAdjust="spacingAndGlyphs">Grid.Facebook</text>
+<text x="635" y="525" fill="#94A3B8" class="t" font-size="13" textLength="200" lengthAdjust="spacingAndGlyphs">...................................</text>
+<text x="840" y="525" fill="#10B981" class="t" font-size="14" textLength="180" lengthAdjust="spacingAndGlyphs" text-anchor="end">-</text>
 </svg>
