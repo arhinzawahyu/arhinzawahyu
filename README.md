@@ -28,7 +28,7 @@
 ---
 
 <!-- ABOUT ME -->
-## ðŸ‘‹ Tentang Saya | About Me
+## 👋 Tentang Saya | About Me
 
 **ID:**  
 Hai! Saya Arhinza Wahyu Styawan, seorang Full-Stack Developer yang antusias dengan pengembangan web modern. Fokus utama saya adalah membangun aplikasi web yang responsif, performant, dan user-friendly. Selalu belajar hal baru dan terus berkembang.
@@ -39,7 +39,7 @@ Hi! I'm Arhinza Wahyu Styawan, a Full-Stack Developer passionate about modern we
 ---
 
 <!-- TECH STACK -->
-## ðŸ› ï¸ Tech Stack
+## 🛠️ Tech Stack
 
 <p align="center">
   <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
@@ -58,7 +58,7 @@ Hi! I'm Arhinza Wahyu Styawan, a Full-Stack Developer passionate about modern we
 ---
 
 <!-- STATS -->
-## ðŸ“Š GitHub Stats
+## 📊 GitHub Stats
 
 <p align="center">
   <a href="https://github.com/arhinzawahyu">
