@@ -62,10 +62,10 @@ Hi! I'm Arhinza Wahyu Styawan, a Full-Stack Developer passionate about modern we
 
 <p align="center">
   <a href="https://github.com/arhinzawahyu">
-    <img width="48%" src="https://stats.indico.pw/api?username=arhinzawahyu&show_icons=true&include_all_commits=true&count_private=true&hide_rank=true&title_color=7C3AED&text_color=A78BFA&icon_color=22D3EE&bg_color=0A101F&border_color=0891B2" alt="GitHub Stats" />
+    <img width="48%" src="https://grs.quantumly.dev/api?username=arhinzawahyu&show_icons=true&include_all_commits=true&count_private=true&hide_rank=true&title_color=7C3AED&text_color=A78BFA&icon_color=22D3EE&bg_color=0A101F&border_color=0891B2" alt="GitHub Stats" />
   </a>
   <a href="https://github.com/arhinzawahyu">
-    <img width="48%" src="https://stats.indico.pw/api/top-langs?username=arhinzawahyu&layout=compact&hide=html,css&title_color=7C3AED&text_color=A78BFA&icon_color=22D3EE&bg_color=0A101F&border_color=0891B2" alt="Top Languages" />
+    <img width="48%" src="https://grs.quantumly.dev/api/top-langs?username=arhinzawahyu&layout=compact&hide=html,css&title_color=7C3AED&text_color=A78BFA&icon_color=22D3EE&bg_color=0A101F&border_color=0891B2" alt="Top Languages" />
   </a>
 </p>
 
