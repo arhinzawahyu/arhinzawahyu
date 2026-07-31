@@ -1,4 +1,4 @@
-<!-- HEADER -->
+﻿<!-- HEADER -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="light.svg" />
@@ -28,7 +28,7 @@
 ---
 
 <!-- ABOUT ME -->
-## 👋 Tentang Saya | About Me
+## ðŸ‘‹ Tentang Saya | About Me
 
 **ID:**  
 Hai! Saya Arhinza Wahyu Styawan, seorang Full-Stack Developer yang antusias dengan pengembangan web modern. Fokus utama saya adalah membangun aplikasi web yang responsif, performant, dan user-friendly. Selalu belajar hal baru dan terus berkembang.
@@ -39,7 +39,7 @@ Hi! I'm Arhinza Wahyu Styawan, a Full-Stack Developer passionate about modern we
 ---
 
 <!-- TECH STACK -->
-## 🛠️ Tech Stack
+## ðŸ› ï¸ Tech Stack
 
 <p align="center">
   <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
@@ -58,14 +58,14 @@ Hi! I'm Arhinza Wahyu Styawan, a Full-Stack Developer passionate about modern we
 ---
 
 <!-- STATS -->
-## 📊 GitHub Stats
+## ðŸ“Š GitHub Stats
 
 <p align="center">
   <a href="https://github.com/arhinzawahyu">
-    <img width="48%" src="https://grs.quantumly.dev/api?username=arhinzawahyu&show_icons=true&include_all_commits=true&count_private=true&hide_rank=true&title_color=7C3AED&text_color=A78BFA&icon_color=22D3EE&bg_color=0A101F&border_color=0891B2&cache_seconds=86400" alt="GitHub Stats" />
+    <img width="48%" src="https://grs-deploy-six.vercel.app/api?username=arhinzawahyu&show_icons=true&include_all_commits=true&count_private=true&hide_rank=true&title_color=7C3AED&text_color=A78BFA&icon_color=22D3EE&bg_color=0A101F&border_color=0891B2&cache_seconds=86400" alt="GitHub Stats" />
   </a>
   <a href="https://github.com/arhinzawahyu">
-    <img width="48%" src="https://grs.quantumly.dev/api/top-langs?username=arhinzawahyu&layout=compact&hide=html,css&title_color=7C3AED&text_color=A78BFA&icon_color=22D3EE&bg_color=0A101F&border_color=0891B2&cache_seconds=86400" alt="Top Languages" />
+    <img width="48%" src="https://grs-deploy-six.vercel.app/api/top-langs?username=arhinzawahyu&layout=compact&hide=html,css&title_color=7C3AED&text_color=A78BFA&icon_color=22D3EE&bg_color=0A101F&border_color=0891B2&cache_seconds=86400" alt="Top Languages" />
   </a>
 </p>
 
