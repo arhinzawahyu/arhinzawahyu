@@ -77,9 +77,9 @@ Hi! I'm Arhinza Wahyu Styawan, a Full-Stack Developer passionate about modern we
 
 <!-- CONTRIBUTION SNAKE -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Platane/snk/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Platane/snk/output/github-snake.svg" />
-  <img alt="snake animation" src="https://raw.githubusercontent.com/Platane/snk/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/arhinzawahyu/arhinzawahyu/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/arhinzawahyu/arhinzawahyu/output/github-snake.svg" />
+  <img alt="Contribution Snake" src="https://raw.githubusercontent.com/arhinzawahyu/arhinzawahyu/output/github-snake-dark.svg" />
 </picture>
 
 ---
