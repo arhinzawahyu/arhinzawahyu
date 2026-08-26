@@ -8,7 +8,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "db:push": "drizzle-kit push --force",
+    "db:tables": "node src/scripts/cek-db.mjs"
   },
   "dependencies": {
     "@astrojs/node": "^11.1.4",
@@ -24,6 +26,8 @@
     "@tailwindcss/vite": "^4.3.3",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.5",
+    "dotenv": "^17.4.2",
+    "drizzle-kit": "^0.31.10",
     "tailwindcss": "^4.3.3",
     "vitest": "^4.1.11"
   }
