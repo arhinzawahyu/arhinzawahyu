@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/*
+  Token warna resmi dari DESIGN.md (keputusan pemilik produk).
+  Konstanta kembarannya di src/lib/design-tokens.ts dijaga oleh unit test
+  agar palet tidak bergeser tanpa sengaja.
+  Catatan: tipografi masih system stack, menunggu keputusan pemilik (Task 16).
+*/
+@theme {
+  --color-base: #222222;
+  --color-ink: #fffeec;
+  --color-accent: #cac426;
+}

@@ -297,7 +297,7 @@ Gaya keseluruhan: **minimalisme gelap + glassmorphism**, momen **scrollytelling 
 
 | Lapisan | Pilihan |
 |---|---|
-| Framework | Astro 5 (SSR, adapter Node) |
+| Framework | Astro 7 (SSR, adapter Node; terpasang saat scaffold 2026-08) |
 | Komponen interaktif | React (islands) |
 | Auth, DB, Storage | Supabase (Auth, Postgres + pgvector, Storage) |
 | ORM/query | Drizzle ORM |
