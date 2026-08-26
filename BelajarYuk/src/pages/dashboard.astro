@@ -1,0 +1,50 @@
+---
+import { eq } from "drizzle-orm";
+import Basis from "../layouts/Basis.astro";
+import TombolKeluar from "../components/react/TombolKeluar";
+import type { PersonaProfil } from "../lib/kuis/skor";
+import { db } from "../lib/db";
+import { profiles } from "../lib/db/schema";
+
+const pengguna = Astro.locals.pengguna;
+// Middleware menjamin halaman ini hanya dirender untuk pengguna terotentikasi.
+const baris = pengguna
+  ? await db.select().from(profiles).where(eq(profiles.userId, pengguna.id))
+  : [];
+const profil = baris[0] ?? null;
+const persona = (profil?.personaJson ?? null) as PersonaProfil | null;
+const sudahKuis = Boolean(persona && persona.tipe_label !== "Belum mengisi kuis");
+---
+
+<Basis judul="Dashboard · BelajarYuk">
+  <main class="mx-auto flex min-h-dvh w-full max-w-3xl flex-col gap-6 px-6 py-10">
+    <header class="flex items-center justify-between gap-4">
+      <a href="/" class="text-lg font-semibold tracking-tight">Belajar<span class="text-accent">Yuk</span></a>
+      <TombolKeluar client:load />
+    </header>
+
+    <section class="rounded-2xl border border-ink/15 p-5">
+      <p class="text-xs opacity-60">{pengguna?.email}</p>
+      <h1 class="mt-1 text-xl font-semibold">Halo{profil?.nama ? `, ${profil.nama}` : ""}!</h1>
+    </section>
+
+    {
+      sudahKuis && persona ? (
+        <section class="rounded-2xl border border-ink/15 p-5">
+          <p class="text-xs opacity-60">Tipe belajarmu</p>
+          <h2 class="text-xl font-semibold text-accent">{persona.tipe_label}</h2>
+          <p class="mt-2 text-sm opacity-80">
+            Tutor chat sedang disiapkan dan akan memakai profil ini untuk menyesuaikan caranya mengajar.
+          </p>
+        </section>
+      ) : (
+        <section class="rounded-2xl border border-accent/40 p-5">
+          <h2 class="font-semibold">Profil belajarmu masih kosong</h2>
+          <p class="mt-1 text-sm opacity-80">
+            Kuis onboarding adalah langkah berikutnya sebelum fitur chat dibuka.
+          </p>
+        </section>
+      )
+    }
+  </main>
+</Basis>

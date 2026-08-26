@@ -1,0 +1,12 @@
+---
+import Basis from "../layouts/Basis.astro";
+import FormOtentikasi from "../components/react/FormOtentikasi";
+---
+
+<Basis judul="Masuk · BelajarYuk">
+  <main class="flex min-h-dvh flex-col items-center justify-center gap-6 px-6">
+    <a href="/" class="text-xl font-semibold tracking-tight">Belajar<span class="text-accent">Yuk</span></a>
+    <h1 class="text-2xl font-semibold">Selamat datang kembali</h1>
+    <FormOtentikasi mode="masuk" client:load />
+  </main>
+</Basis>

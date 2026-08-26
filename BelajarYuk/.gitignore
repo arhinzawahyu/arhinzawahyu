@@ -10,3 +10,6 @@ dist/
 
 # testing
 coverage/
+
+# log sementara lokal
+supabase-start.log

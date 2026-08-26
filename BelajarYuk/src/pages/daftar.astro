@@ -1,0 +1,17 @@
+---
+import Basis from "../layouts/Basis.astro";
+import FormOtentikasi from "../components/react/FormOtentikasi";
+---
+
+<Basis judul="Daftar · BelajarYuk">
+  <main class="flex min-h-dvh flex-col items-center justify-center gap-6 px-6">
+    <a href="/" class="text-xl font-semibold tracking-tight">Belajar<span class="text-accent">Yuk</span></a>
+    <div class="max-w-sm text-center">
+      <h1 class="text-2xl font-semibold">Kenali caramu belajar</h1>
+      <p class="mt-1 text-sm opacity-70">
+        Setelah membuat akun, kamu mengisi kuis singkat agar tutor AI paham gayamu.
+      </p>
+    </div>
+    <FormOtentikasi mode="daftar" client:load />
+  </main>
+</Basis>

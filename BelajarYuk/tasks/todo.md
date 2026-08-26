@@ -6,7 +6,7 @@ Mode kerja: antislop DURING + DESIGN.md (ENERGY 1 / RHYTHM 2 / MOTION 1–2).
 ## Fase A — Fondasi & Chat Adaptif
 
 - [x] Task 1: Scaffold proyek & infrastruktur dasar (Astro+React+Tailwind+Drizzle+Supabase)
-- [ ] Task 2: Autentikasi daftar/masuk/keluar + middleware proteksi
+- [x] Task 2: Autentikasi daftar/masuk/keluar + middleware proteksi *(E2E lolos di Supabase lokal)*
 - [x] Task 3: Modul kuis onboarding — soal & skoring (fungsi murni + test) *(arketipe: Set Karakter)*
 - [ ] Task 4: Alur kuis onboarding UI + API persona
 - [ ] **Checkpoint A1:** build+test hijau; alur daftar→kuis→dashboard E2E; review visual bersama user

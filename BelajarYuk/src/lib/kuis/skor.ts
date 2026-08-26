@@ -25,6 +25,16 @@ export interface PersonaProfil {
   versi_kuis: number;
 }
 
+/** Persona awal sebelum kuis diisi; dimensi netral agar chat tetap wajar. */
+export const PROFIL_DEFAULT: PersonaProfil = {
+  nada_bicara: 3,
+  tempo: 3,
+  motivasi: 3,
+  gaya_penjelasan: "langkah-detail",
+  tipe_label: "Belum mengisi kuis",
+  versi_kuis: VERSI_KUIS,
+};
+
 const DIMENSI_SKALA: readonly DimensiSkala[] = ["nada_bicara", "tempo", "motivasi"];
 
 function rataRataDimensi(dimensi: DimensiSkala, jawaban: JawabanKuis): number {
