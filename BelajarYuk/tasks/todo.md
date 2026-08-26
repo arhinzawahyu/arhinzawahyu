@@ -7,7 +7,7 @@ Mode kerja: antislop DURING + DESIGN.md (ENERGY 1 / RHYTHM 2 / MOTION 1–2).
 
 - [x] Task 1: Scaffold proyek & infrastruktur dasar (Astro+React+Tailwind+Drizzle+Supabase)
 - [ ] Task 2: Autentikasi daftar/masuk/keluar + middleware proteksi
-- [ ] Task 3: Modul kuis onboarding — soal & skoring (fungsi murni + test) *(butuh: nama arketipe)*
+- [x] Task 3: Modul kuis onboarding — soal & skoring (fungsi murni + test) *(arketipe: Set Karakter)*
 - [ ] Task 4: Alur kuis onboarding UI + API persona
 - [ ] **Checkpoint A1:** build+test hijau; alur daftar→kuis→dashboard E2E; review visual bersama user
 - [ ] Task 5: Persona engine — kompilator system prompt 4 lapis (snapshot test)
