@@ -10,7 +10,7 @@ Mode kerja: antislop DURING + DESIGN.md (ENERGY 1 / RHYTHM 2 / MOTION 1–2).
 - [x] Task 3: Modul kuis onboarding — soal & skoring (fungsi murni + test) *(arketipe: Set Karakter)*
 - [ ] Task 4: Alur kuis onboarding UI + API persona
 - [ ] **Checkpoint A1:** build+test hijau; alur daftar→kuis→dashboard E2E; review visual bersama user
-- [ ] Task 5: Persona engine — kompilator system prompt 4 lapis (snapshot test)
+- [x] Task 5: Persona engine — kompilator system prompt 4 lapis (snapshot test)
 - [ ] Task 6: Service Gemini + endpoint `/api/chat` streaming SSE
 - [ ] Task 7a: UI chat — struktur, state dasar, render streaming
 - [ ] Task 7b: UI chat — polish interaksi, 3 state, keyboard, mobile
