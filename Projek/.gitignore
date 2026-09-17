@@ -1,0 +1,12 @@
+# non-prod, tidak ikut git / deploy Vercel via git
+AGENTS.md
+agents.md
+CLAUDE.md
+GEMINI.md
+antislop.md
+DESIGN.md
+design.md
+skills/
+SKILLS.md
+docs/
+anti-slop/
