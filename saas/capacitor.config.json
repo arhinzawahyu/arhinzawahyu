@@ -1,0 +1,6 @@
+{
+  "appId": "com.bukukas.app",
+  "appName": "BukuKas",
+  "webDir": ".",
+  "bundledWebRuntime": false
+}

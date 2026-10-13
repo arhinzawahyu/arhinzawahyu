@@ -1,0 +1,90 @@
+:root{
+  --paper:#FFFBF0;
+  --ink:#1A1A1E;
+  --muted:#6B6B6B;
+  --line:#E8E0D4;
+  --accent:#1B4D3E;
+  --accent-ink:#FFFFFF;
+  --danger:#9B2C2C;
+  --radius:12px;
+  --shadow:0 1px 2px rgba(26,26,30,.06), 0 4px 16px rgba(26,26,30,.06);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 "DM Sans",system-ui,sans-serif}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:8px 12px;border-radius:8px}
+.skip:focus{left:8px;z-index:99}
+
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+.top{position:sticky;top:0;z-index:10;background:rgba(255,251,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top-inner{display:flex;align-items:center;justify-content:space-between;min-height:56px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px}
+.mark{width:10px;height:10px;background:var(--accent);border-radius:3px;display:inline-block}
+.brand-name{font:600 16px "Newsreader",serif;letter-spacing:.01em}
+.brand-sub{color:var(--muted);font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+.top nav{display:flex;align-items:center;gap:8px}
+.top nav a{color:var(--ink);text-decoration:none;padding:8px 10px;border-radius:8px}
+.top nav a:hover{background:var(--line)}
+#btnInstall{border:1px solid var(--accent);background:#fff;color:var(--accent);padding:8px 12px;border-radius:999px;font-weight:600;min-height:44px;cursor:pointer}
+
+/* Saldo focal */
+.saldo{margin:24px 0;padding:20px 18px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
+.label{margin:0;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.saldo-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.saldo-angka{margin:6px 0 4px;font:700 36px/1 "DM Sans",sans-serif;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.saldo-meta{margin:0;color:var(--muted);font-size:13px}
+.saldo-bar{height:6px;background:var(--line);border-radius:999px;margin-top:14px;overflow:hidden}
+.saldo-bar i{display:block;height:100%;width:50%;background:var(--accent);border-radius:999px}
+
+/* Cards */
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:16px}
+.tabs{display:flex;gap:8px;margin-bottom:12px}
+.tab{flex:1;min-height:44px;border:1px solid var(--line);background:var(--paper);border-radius:999px;font-weight:600;cursor:pointer}
+.tab.active{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:640px){.grid2{grid-template-columns:1fr}}
+label{display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--muted)}
+input,select{width:100%;min-height:44px;padding:10px 12px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;color:var(--ink);font:500 15px "DM Sans",sans-serif}
+input::placeholder{color:#9a9a9a}
+.err{min-height:16px;color:var(--danger);font-size:12px}
+.form-actions{margin-top:8px;display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.primary{background:var(--accent);color:var(--accent-ink);border:1px solid var(--accent);min-height:44px;padding:10px 18px;border-radius:999px;font-weight:700;cursor:pointer}
+.primary:hover{filter:brightness(.96)}
+.ghost{background:#fff;border:1px solid var(--line);color:var(--ink);min-height:44px;padding:8px 14px;border-radius:999px;font-weight:600;cursor:pointer}
+.hint{margin:0;color:var(--muted);font-size:12px}
+.form-msg{min-height:18px;font-size:13px;color:var(--accent)}
+.form-msg.error{color:var(--danger)}
+
+/* List */
+.list-wrap{margin-top:18px}
+.list-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px;margin-bottom:10px}
+.list-head h2{font:600 22px "Newsreader",serif;margin:0}
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.filters input,.filters select{max-width:220px}
+@media(max-width:640px){.filters input,.filters select{max-width:none;flex:1 1 140px}}
+.state{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;text-align:center;color:var(--muted)}
+.empty-title{margin:0 0 4px;color:var(--ink);font-weight:700}
+.state.error{color:var(--danger);border-color:#f0c9c9;background:#FFF5F5}
+.list{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.row{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.row-main{min-width:0}
+.row-title{margin:0;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row-meta{margin:2px 0 0;color:var(--muted);font-size:12px}
+.row-amount{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.row-amount.out{color:var(--danger)}
+.row-amount.in{color:var(--accent)}
+.row-actions{display:flex;gap:6px;flex-shrink:0}
+.icon-btn{width:44px;height:44px;border:1px solid var(--line);background:#fff;border-radius:10px;cursor:pointer;display:grid;place-items:center}
+.icon-btn:hover{background:var(--paper)}
+.total-row{margin:10px 2px 0;color:var(--muted);font-size:13px;text-align:right}
+.help{margin:22px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
+.help h2{font:600 16px "Newsreader",serif;margin:0 0 8px}
+.help ol{margin:0;padding-left:18px;color:var(--muted)}
+.help code{background:var(--paper);border:1px solid var(--line);padding:1px 6px;border-radius:6px}
+.foot{padding:18px 16px 28px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);margin-top:12px}
+dialog{border:1px solid var(--line);border-radius:16px;padding:16px;max-width:420px;width:calc(100% - 32px)}
+dialog::backdrop{background:rgba(26,26,30,.45)}
+.dlg-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:12px}
+.muted{color:var(--muted);font-size:13px}

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1B4D3E">
+<meta name="description" content="Catat setiap pembelian dan lihat sisa uang dengan jelas.">
+<title>BukuKas — Catatan Keuangan Pribadi</title>
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Newsreader:opsz,wght@6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Langsung ke isi</a>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"></span>
+      <span class="brand-name">BukuKas</span>
+      <span class="brand-sub">buku kas tenang</span>
+    </div>
+    <nav aria-label="Navigasi">
+      <a href="#catat">Catat</a>
+      <a href="#riwayat">Riwayat</a>
+      <button id="btnInstall" hidden>Pasang di HP</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <!-- SALDO: focal point -->
+  <section class="saldo" aria-labelledby="saldoLabel">
+    <div class="saldo-head">
+      <p id="saldoLabel" class="label">Sisa uang saat ini</p>
+      <button id="btnEditSaldo" class="ghost">Atur saldo awal</button>
+    </div>
+    <p class="saldo-angka" id="saldoAngka" aria-live="polite">Rp 0</p>
+    <p class="saldo-meta" id="saldoMeta">Saldo awal Rp 0 • 0 transaksi</p>
+    <div class="saldo-bar" aria-hidden="true"><i id="saldoBar"></i></div>
+  </section>
+
+  <!-- FORM -->
+  <section id="catat" class="card">
+    <div class="tabs" role="tablist" aria-label="Jenis transaksi">
+      <button role="tab" aria-selected="true" data-type="out" id="tabOut" class="tab active">Uang keluar</button>
+      <button role="tab" aria-selected="false" data-type="in" id="tabIn" class="tab">Uang masuk</button>
+    </div>
+
+    <form id="form" novalidate>
+      <div class="grid2">
+        <label>Nama barang atau sumber
+          <input id="fTitle" required maxlength="60" placeholder="Contoh: Beli beras 5kg" autocomplete="off">
+          <span class="err" id="eTitle"></span>
+        </label>
+        <label>Jumlah (Rp)
+          <input id="fAmount" required inputmode="numeric" placeholder="50000">
+          <span class="err" id="eAmount"></span>
+        </label>
+      </div>
+      <div class="grid2">
+        <label>Kategori
+          <select id="fCat">
+            <option value="Makan">Makan</option>
+            <option value="Transport">Transport</option>
+            <option value="Belanja">Belanja</option>
+            <option value="Tagihan">Tagihan</option>
+            <option value="Lainnya" selected>Lainnya</option>
+            <option value="Gaji">Gaji</option>
+            <option value="Hadiah">Hadiah</option>
+          </select>
+        </label>
+        <label>Tanggal
+          <input id="fDate" type="date" required>
+        </label>
+      </div>
+      <div class="form-actions">
+        <button type="submit" id="btnSubmit" class="primary">Catat pengeluaran</button>
+        <p class="hint">Tersimpan di HP. Bisa jadi APK Android kapan saja.</p>
+      </div>
+      <p id="formMsg" class="form-msg" aria-live="polite"></p>
+    </form>
+
+    <dialog id="dlgSaldo">
+      <form method="dialog" id="saldoForm">
+        <h2>Atur saldo awal</h2>
+        <p class="muted">Saldo saat ini dihitung dari saldo awal ditambah semua transaksi.</p>
+        <label>Saldo awal (Rp)
+          <input id="fSaldoAwal" inputmode="numeric" placeholder="1000000">
+        </label>
+        <div class="dlg-actions">
+          <button value="cancel" class="ghost">Batal</button>
+          <button value="save" class="primary">Simpan saldo</button>
+        </div>
+      </form>
+    </dialog>
+  </section>
+
+  <!-- FILTER + LIST -->
+  <section id="riwayat" class="list-wrap">
+    <div class="list-head">
+      <h2>Riwayat</h2>
+      <div class="filters">
+        <input id="q" placeholder="Cari nama atau kategori" aria-label="Cari transaksi">
+        <select id="filterCat" aria-label="Filter kategori">
+          <option value="">Semua kategori</option>
+          <option>Makan</option><option>Transport</option><option>Belanja</option><option>Tagihan</option><option>Lainnya</option><option>Gaji</option><option>Hadiah</option>
+        </select>
+        <button id="btnExport" class="ghost">Unduh JSON</button>
+      </div>
+    </div>
+
+    <div id="stateLoading" hidden class="state">Memuat catatan...</div>
+    <div id="stateEmpty" hidden class="state empty">
+      <p class="empty-title">Belum ada catatan</p>
+      <p class="muted">Catat pembelian pertama di atas. Contoh: Beli kopi Rp 18000, kategori Makan.</p>
+    </div>
+    <div id="stateError" hidden class="state error">
+      <p>Gagal memuat data di perangkat ini.</p>
+      <button id="btnRetry" class="ghost">Coba lagi</button>
+    </div>
+
+    <ul id="list" class="list" aria-live="polite"></ul>
+    <p class="total-row" id="totalRow"></p>
+  </section>
+
+  <section class="help">
+    <h2>Cara pasang di Android</h2>
+    <ol>
+      <li>Buka situs ini di Chrome HP, ketuk menu titik tiga, pilih Pasang aplikasi.</li>
+      <li>Untuk APK Play Store, jalankan <code>npx cap add android</code> lalu <code>npx cap open android</code> di folder ini.</li>
+      <li>Data tersimpan lokal. Upgrade ke Supabase tinggal ganti penyimpanan di <code>app.js</code>.</li>
+    </ol>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <p>BukuKas — data di HP kamu, bukan di server orang. <a href="#riwayat">Lihat riwayat</a></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

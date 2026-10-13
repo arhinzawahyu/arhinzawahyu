@@ -1,0 +1,58 @@
+name: Build BukuKas APK
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "saas/**"
+      - ".github/workflows/bukukas-apk.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Install deps
+        working-directory: saas
+        run: npm ci || npm install
+
+      - name: Generate icons
+        working-directory: saas
+        run: |
+          python3 -c "
+          import base64
+          # 1x1 placeholder, replaced by capacitor assets later if needed; keep minimal for build
+          b=base64.b64decode('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==')
+          open('icon-192.png','wb').write(b)
+          open('icon-512.png','wb').write(b)
+          "
+
+      - name: Init Android platform
+        working-directory: saas
+        run: |
+          npx cap add android || true
+          npx cap copy
+
+      - name: Build APK (debug)
+        working-directory: saas
+        run: |
+          cd android
+          chmod +x gradlew
+          ./gradlew assembleDebug --stacktrace
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: bukukas-debug-apk
+          path: saas/android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
