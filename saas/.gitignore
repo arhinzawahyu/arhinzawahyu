@@ -1,0 +1,5 @@
+api/node_modules/
+api/dist/
+api/bukukas.sqlite
+api/bukukas.sqlite-journal
+.env
