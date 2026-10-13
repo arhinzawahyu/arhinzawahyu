@@ -3,6 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
+    "dev": "npm run start:dev --prefix api",
+    "dev:api": "npm run start:dev --prefix api",
+    "start": "npm run start --prefix api",
+    "build": "npm run build --prefix api",
     "android": "cap add android && cap copy && cap open android"
   },
   "devDependencies": {
